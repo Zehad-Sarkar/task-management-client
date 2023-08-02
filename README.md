@@ -12,5 +12,5 @@
 
 - live link : https://64ca789d47287b0fd02da900--cheery-platypus-d96c69.netlify.app/
 
-- github client link :
-- github server link :
+- github client link : https://github.com/Zehad-Sarkar/task-management-client.git
+- github server link : https://github.com/Zehad-Sarkar/task-management-server.git
