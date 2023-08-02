@@ -15,7 +15,7 @@ const Task = () => {
       description,
       status: "uncomplete",
     };
-    fetch("http://localhost:5000/addTask", {
+    fetch("https://task-management-server-umber.vercel.app/addTask", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -24,7 +24,7 @@ const Task = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-         formRef.current.reset();
+        formRef.current.reset();
         if (data.insertedId) {
           Swal.fire({
             position: "center",
@@ -48,16 +48,16 @@ const Task = () => {
             <input
               type="text"
               name="title"
-              className="form-control border w-full p-2 rounded-sm"
+              className="w-full p-2 border rounded-sm form-control"
             />
           </div>
 
           <div className="w-1/2">
-            <label htmlFor="description" className="form-label block ">
+            <label htmlFor="description" className="block form-label ">
               Description
             </label>
             <textarea
-              className="border w-full resize-none p-1 rounded-sm"
+              className="w-full p-1 border rounded-sm resize-none"
               name="description"
               rows={8}
               cols={20}
